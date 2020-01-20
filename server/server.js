@@ -91,16 +91,6 @@ app.post('/webhook', bodyParser.raw({type: 'application/json'}), async (req, res
     console.log("❌ Payment failed.");
   }
 
-  if (eventType === "payment_intent.canceled") {
-    // Notify the customer that their order canceled
-    console.log("❌ Payment canceled.");
-  }
-
-  if (eventType === "payment_intent.initiated") {
-    // Notify the customer that their order has been initiated
-    console.log("💰 Order initiated!");
-  }
-
   res.sendStatus(200);
 });
 
