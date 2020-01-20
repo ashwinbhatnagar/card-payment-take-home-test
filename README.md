@@ -65,6 +65,14 @@ When running both servers, you are now ready to use the app running in [http://l
 1. Hit "Pay"
 1. 🎉
 
+## FAQ
+
+Q: How can I use webhooks in testmode?
+
+A: Using the [Stripe CLI](https://stripe.com/docs/stripe-cli) is the easiest way to build, test, and manage your Stripe integration right from the terminal, including [using webhooks in testmode](https://stripe.com/docs/stripe-cli#listen-for-events).
+
+Alternately, since Stripe webhooks need publicly accessible URLs, you can use a tool like [ngrok](https://ngrok.com/download) to expose a local web server to the internet. Once you install ngrok, remember to setup the webhook endpoint in the Stripe Dashboard and update the .env file with the webhook secretk key. 
+
 ## Author(s)
 
 [@abhatnagar](https://twitter.com/abhatnagar)
