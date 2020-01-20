@@ -38,13 +38,13 @@ STRIPE_SECRET_KEY=<replace-with-your-secret-key>
 ### Running the API server
 
 1. Go to `/server`
-1. Install dependencies
+2. Install dependencies
 
 ```
 npm install
 ```
 
-1. Run the application
+3. Run the application
 
 ```
 npm start
@@ -67,4 +67,4 @@ When running both servers, you are now ready to use the app running in [http://l
 
 ## Author(s)
 
-[@ashwinbhatnagar](https://twitter.com/abhatnagar)
+[@abhatnagar](https://twitter.com/abhatnagar)
